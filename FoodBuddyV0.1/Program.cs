@@ -10,7 +10,24 @@ namespace FoodBuddyV0._1
     {
         static void Main(string[] args)
         {
-            // Eerst connectie met DB en Arduino opstellen
+            Console.WriteLine("Welkome, Voer je naam in: ");
+            string naam = Console.ReadLine();
+            Console.WriteLine("Voer je gender in: ");
+            string gender = Console.ReadLine();
+            Console.WriteLine("Voer je allergieen in: ");
+            string allergieen = Console.ReadLine();
+            ConnectionDB connection = new ConnectionDB();
+            Product newProduct = new Product("8715600231090");
+            Console.WriteLine(newProduct.GetProductName());
+            Console.ReadLine();
+            Console.WriteLine(newProduct.GetProductIngredients());
+            Console.ReadLine();
+
+
+
+
+
+           /* // Eerst connectie met DB en Arduino opstellen
             ConnectDatabase();
             ConnectArduino();
             // Profielregistratie
@@ -39,7 +56,7 @@ namespace FoodBuddyV0._1
             {
                 Display();
             }
-
+            */
 
 
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Proftaak_P2_V1
+namespace FoodBuddyV0._1
 {
     enum Allergy
     {
